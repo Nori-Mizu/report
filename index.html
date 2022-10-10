@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>放物線を描く</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onLoad="test()">
+　<h1>＜for ループを使って２次曲線を描いてみました！＞</h1>
+
+　<canvas width="500" height="500" id="area" style="background-color:rgb(3, 3, 0);">
+　　　　</canvas>
+
+<script>
+function test() {
+  var canvas = document.getElementById('area');
+  if (canvas.getContext) {
+    var context = canvas.getContext('2d');
+
+    context.fillStyle = "blue";
+    context.font = "15px 'ＭＳ ゴシック'";
+  
+    context.textAlign = "left";
+    context.textBaseline = "top";
+
+      for (let x=1 ; x <300 ; x++ ) {
+      let y = (x**2);　　                        
+      context.fillText("@", x*7, y*0.1, 40);　 
+    }
+　}
+}　  
+   </script>
+
+　<h2>       レベル底くてすみません!!</h2>
+
+　<img src="./img/sorry.png" alt="" width="50%"">
+
+　<h2>　・・・　なのでこちらも頑張って作ってみました！</h2>
+
+　<h1>　**********＜六華苑のご紹介＞**********　　</h1>
+
+ <h3>ちょっとジブリの世界を感じられるかも.....</h3>
+　
+　<ul>
+    <li>三重県桑名市にあり、二代諸戸清六の邸宅として大正2年（1913年）に完成。</li>
+    <li> 六華苑は鹿鳴館の設計で有名なイギリス人建築家ジョサイア・コンドル設計。</li>
+    <li>和洋の様式が調和した明治・大正期を代表する貴重な文化財で平成9年に国の重要文化財に指定されています。</li>
+    <li>庭園は一部を除き平成13年に国の名勝に指定されました。 </li>
+
+ 　</ul>
+
+
+  <img src="./img/out1.jpeg" alt="" width="50%"">
+  <p class="no1">↑ 建物の外観はこんな感じ</p>
+
+  <img src="./img/out2.jpeg" alt="" width="50%"">
+  <p class="no1">↑　庭から見るとこんな感じ</p>
+
+  <img src="./img/out3.jpeg" alt="" width="50%"">
+  <p class="no1">↑　庭の奥の方から見るとこんな感じ</p>
+
+  <img src="./img/in1.jpeg" alt="" width="50%"">
+  <p class="no1">↑　建物内部の廊下部分</p>
+
+  <img src="./img/inb.jpeg" alt="" width="50%"">
+  <p class="no1">↑　建物内部の和風部分</p>
+
+  <img src="./img/inc.jpeg" alt="" width="50%"">
+  <p class="no1">↑　建物和室から庭を臨むと</p>
+
+  <img src="./img/ind.jpeg" alt="" width="50%"">
+  <p class="no1">↑　建物洋風部分です</p>
+
+<h2>
+   ジブリ好きでない方も一度訪れてみてはいかがでしょうか。
+</h2>
+
+</body>
+
+
+</html>
